@@ -430,3 +430,52 @@ h1 {
 .stillness .chapter-en {
     color: #94a5b3;
 }
+/* =========================================
+   PEACE
+========================================= */
+
+.peace {
+    background:
+        linear-gradient(
+            180deg,
+            #12191f 0%,
+            #151d23 45%,
+            #182128 100%
+        );
+}
+
+.peace .chapter-number {
+    color: #66737c;
+}
+
+.peace .chapter-label {
+    color: #91a7b7;
+}
+
+.peace h2 {
+    color: #ece9e1;
+}
+
+.peace .chapter-en {
+    color: #a2b3c0;
+}
+
+.peace-quote {
+    max-width: 760px;
+
+    margin-bottom: 18px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(25px, 3.3vw, 38px);
+
+    line-height: 1.5;
+
+    color: #d2d2cb;
+}
+
+.peace-quote-en {
+    margin-bottom: 70px;
+
+    color: #8293a0;
+}
