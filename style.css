@@ -1,7 +1,15 @@
+/* =========================
+   RESET
+========================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -10,50 +18,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.hero {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
-    padding: 10%;
-    max-width: 1100px;
-}
-
-.small-title {
-    font-size: 13px;
-    letter-spacing: 4px;
-    color: #76808c;
-    margin-bottom: 35px;
-}
-
-h1 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(42px, 7vw, 90px);
-    font-weight: 400;
-    line-height: 1.1;
-    margin-bottom: 35px;
-}
-
-.english {
-    font-family: Georgia, "Times New Roman", serif;
-    color: #9ca4ad;
-    font-size: 24px;
-    line-height: 1.5;
-    margin-bottom: 60px;
-}
-
-.intro {
-    max-width: 650px;
-    font-size: 17px;
-    line-height: 1.8;
-    color: #c4c3bf;
-}
-
-.english-text {
-    margin-top: 10px;
-    color: #737b84;
-}
 /* =========================
    NAVIGATION
 ========================= */
@@ -64,69 +29,178 @@ h1 {
     left: 0;
 
     width: 100%;
+    height: 80px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    padding: 28px 6%;
+    padding: 0 6%;
 
-    background: rgba(8, 11, 15, 0.8);
+    background: rgba(8, 11, 15, 0.88);
     backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 
     z-index: 1000;
 }
 
 .logo {
     color: #e9e7e2;
-
     text-decoration: none;
 
     font-size: 12px;
     letter-spacing: 4px;
+
+    white-space: nowrap;
 }
 
 .nav-links {
     display: flex;
-    gap: 32px;
+    align-items: center;
+
+    gap: 30px;
 }
 
 .nav-links a {
-    color: #8d959f;
-
+    color: #7f8994;
     text-decoration: none;
 
     font-size: 11px;
-    letter-spacing: 2px;
+    letter-spacing: 1.8px;
 
-    transition: 0.3s;
+    transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
     color: #ffffff;
 }
 
+
+/* =========================
+   LANGUAGE
+========================= */
+
 .language {
     display: flex;
     align-items: center;
+
     gap: 7px;
 
-    color: #616973;
-
-    font-size: 11px;
+    color: #505862;
 }
 
 .language button {
-    background: none;
+    background: transparent;
     border: none;
 
-    color: #8d959f;
+    color: #7f8994;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
 
     cursor: pointer;
 
-    font-size: 11px;
+    padding: 5px;
+
+    transition: color 0.3s ease;
 }
 
 .language button:hover {
     color: #ffffff;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 140px 10% 80px;
+
+    max-width: 1200px;
+}
+
+.small-title {
+    font-size: 13px;
+    letter-spacing: 6px;
+
+    color: #76808c;
+
+    margin-bottom: 45px;
+}
+
+h1 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(45px, 7vw, 88px);
+    font-weight: 400;
+
+    line-height: 1.1;
+
+    max-width: 1000px;
+
+    margin-bottom: 45px;
+}
+
+.english {
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: #8e9eae;
+
+    font-size: clamp(22px, 3vw, 32px);
+
+    line-height: 1.5;
+
+    margin-bottom: 70px;
+}
+
+.intro {
+    max-width: 760px;
+
+    font-size: 17px;
+    line-height: 1.9;
+
+    color: #c4c3bf;
+}
+
+.english-text {
+    margin-top: 12px;
+
+    color: #6f7882;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .logo {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .hero {
+        padding: 130px 7% 70px;
+    }
+
+    h1 {
+        font-size: clamp(42px, 10vw, 70px);
+    }
 }
