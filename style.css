@@ -401,3 +401,32 @@ h1 {
         margin-bottom: 50px;
     }
 }
+/* =========================================
+   STILLNESS
+========================================= */
+
+.stillness {
+    background:
+        linear-gradient(
+            180deg,
+            #0d1218 0%,
+            #10161c 45%,
+            #12191f 100%
+        );
+}
+
+.stillness .chapter-number {
+    color: #56636e;
+}
+
+.stillness .chapter-label {
+    color: #8195a5;
+}
+
+.stillness h2 {
+    color: #e4e2dc;
+}
+
+.stillness .chapter-en {
+    color: #94a5b3;
+}
