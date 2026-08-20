@@ -204,3 +204,143 @@ h1 {
         font-size: clamp(42px, 10vw, 70px);
     }
 }
+/* =========================
+   CHAPTER — STORMS
+========================= */
+
+.chapter {
+    min-height: 100vh;
+
+    padding: 140px 10%;
+
+    display: grid;
+    grid-template-columns: 100px 1fr;
+
+    gap: 40px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.chapter-number {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+
+    color: #46505a;
+
+    padding-top: 10px;
+}
+
+.chapter-content {
+    max-width: 850px;
+}
+
+.chapter-label {
+    font-size: 12px;
+    letter-spacing: 5px;
+
+    color: #75889a;
+
+    margin-bottom: 50px;
+}
+
+.chapter h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(42px, 6vw, 76px);
+    font-weight: 400;
+
+    line-height: 1.15;
+
+    color: #e6e3dc;
+
+    margin-bottom: 35px;
+}
+
+.chapter-en {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(21px, 3vw, 30px);
+
+    line-height: 1.5;
+
+    color: #8293a4;
+
+    margin-bottom: 70px;
+}
+
+.chapter-description {
+    max-width: 680px;
+
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    color: #b7b8b6;
+}
+
+.chapter-description-en {
+    margin-top: 12px;
+
+    color: #626c76;
+}
+
+.chapter-link {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 20px;
+
+    margin-top: 55px;
+
+    color: #8996a3;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    transition: 0.3s ease;
+}
+
+.chapter-link:hover {
+    color: #ffffff;
+}
+
+.chapter-link span {
+    transition: transform 0.3s ease;
+}
+
+.chapter-link:hover span {
+    transform: translateX(7px);
+}
+
+
+/* STORMS BACKGROUND */
+
+.storms {
+    background:
+        linear-gradient(
+            180deg,
+            #080b0f 0%,
+            #0a0e13 50%,
+            #0d1218 100%
+        );
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .chapter {
+        grid-template-columns: 1fr;
+
+        padding: 100px 7%;
+    }
+
+    .chapter-number {
+        margin-bottom: 10px;
+    }
+}
