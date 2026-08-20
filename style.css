@@ -54,3 +54,79 @@ h1 {
     margin-top: 10px;
     color: #737b84;
 }
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 28px 6%;
+
+    background: rgba(8, 11, 15, 0.8);
+    backdrop-filter: blur(12px);
+
+    z-index: 1000;
+}
+
+.logo {
+    color: #e9e7e2;
+
+    text-decoration: none;
+
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a {
+    color: #8d959f;
+
+    text-decoration: none;
+
+    font-size: 11px;
+    letter-spacing: 2px;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #616973;
+
+    font-size: 11px;
+}
+
+.language button {
+    background: none;
+    border: none;
+
+    color: #8d959f;
+
+    cursor: pointer;
+
+    font-size: 11px;
+}
+
+.language button:hover {
+    color: #ffffff;
+}
